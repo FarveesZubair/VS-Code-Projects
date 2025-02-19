@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="title"><b>College Survey Form</b></h1>
+    <p id="description">Thank you for taking the time to help us improve the college</p>
+<form id="survey-form">
+    <label for="name">Name</label><br>
+    <input type="text" id="name-label" placeholder="Enter your Name"><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email-label" placeholder="Enter your E-mail id"><br>
+    <label for="age">Age</label><br>
+    <input type="number" id="age-label" min="1" max="2" placeholder="Enter your age"><br>
+    <label for="department">Department</label><br>
+    <select name="department" id="select" type="dropdown">
+        <option value=" "> </option>
+        <option value="BA">BA</option>
+    <option value="Bsc">BSc</option>
+    <option value="BCom">BCom</option>
+    <option value="MA">MA</option>
+    <option value="MSc">MSc</option>
+    <option value="MCom">MCom</option>
+    <option value="MCA">MCA</option>
+    <option value="MBA">MBA</option>
+    </select><br>
+    <label for="recommendation">Would you recommend this college to your friends</label><br>
+    <input type="radio" id="yes" name="radio">Surely recommended <br>
+    <input type="radio" id="maybe" name="radio">Maybe recommended <br>
+    <input type="radio" id="no" name="radio">Not recommended <br>
+    <label for="improvements">What would you like to improve us in future  </label><br>
+    <input type="checkbox" value="classroom">Classroom<br>
+    <input type="checkbox" value="lab">Lab Facility<br>
+    <input type="checkbox" value="auditorium">Auditorium<br>
+    <input type="checkbox" value="canteen">Canteen<br>
+    <input type="checkbox" value="transport">Transport<br>
+    <input type="checkbox" value="library">Library<br>
+    <label for="feedback">feedback</label><br>
+    <input type="textarea" placeholder="Enter your feedback"><br>
+    <input type="submit" value="submit" id="submit">
+</form>
+</body>
+</html>

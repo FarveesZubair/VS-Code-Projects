@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#navbar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+#navbar header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#navbar nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#navbar nav a:hover {
+    background-color: #575757;
+}
+
+#main-doc {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+}
+
+.main-section {
+    margin-bottom: 20px;
+}
+
+.main-section header h2 {
+    font-size: 1.5rem;
+}
+
+code {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    
+    #main-doc {
+        margin-left: 0;
+    }
+}

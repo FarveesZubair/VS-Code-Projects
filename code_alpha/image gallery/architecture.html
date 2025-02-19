@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <div class="gallery">
+        <!-- Add images dynamically using JavaScript -->
+    </div>
+    <div class="lightbox">
+        <span class="close" onclick="closeLightbox()">✖</span>
+        <button class="prev" onclick="prevImage()">❮</button>
+        <img id="lightbox-img" src="" alt="Gallery Image">
+        <button class="next" onclick="nextImage()">❯</button>
+        <div class="mini-viewer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
