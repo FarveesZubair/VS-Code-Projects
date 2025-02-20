@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <button id="list-btn"><img src="res/icons8-menu-20.png" alt="list"></button><br><br>
+        <div id="song-list" class="hidden"></div>
+        <div class="thumbnail-container">
+            <img id="thumbnail" src="res/default.jpg" alt="Song Thumbnail">
+        </div>
+        <h2 id="song-title">Song Title</h2>
+        <div class="progress-container">
+            <span id="elapsed-time">0:00</span>
+            <input type="range" id="progress-bar" value="0">
+            <span id="total-time">0:00</span>
+        </div>
+        <div class="controls">
+            <button id="prev"><img src="res/back.png" alt="previous" height="20px" width="20px"></button>
+            <button id="rewind"><img src="res/icons8-replay-10-50.png" alt="10s backward" height="20px" width="20px"></button>
+            <button id="play-pause"><img src="res/play.png" alt="play" height="20px" width="20px"></button>
+            <button id="forward"><img src="res/icons8-forward-10-50.png" alt="10s forward" height="20px" width="20px"></button>
+            <button id="next"><img src="res/next.png" alt="next" height="20px" width="20px"></button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
